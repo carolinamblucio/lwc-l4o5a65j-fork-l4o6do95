@@ -1,6 +1,17 @@
 h1 {
-    color: rgb(0, 112, 210);
+    text-align: center;
+    text-shadow: 1px 1px 2px #86c2fdc7;
+    background-color: #cad4dcc7;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
 }
+h2{
+    background-color: #cad4dcc7;
+    text-shadow: 1px 1px 2px #6db9f7c7;
+    font-size: 15px;
+}
+
 p {
     font-family: 'Salesforce Sans', Arial, sans-serif;
     color: rgb(62, 62, 60);
@@ -9,4 +20,60 @@ p {
     background-color: #fafaf9;
     height: 100vh;
     overflow: scroll;
+}
+.slds-card{
+    text-align: center;
+    
+}
+
+.preco{
+    font-weight: bold;
+}
+.b1{
+    height:25px;
+    width:25px;
+    border-radius:50%;
+    margin:10px;
+    display:inline;
+    background-color:#fc3232c7 ;
+}
+.b2{
+    height:25px;
+    width:25px;
+    border-radius:50%;
+    margin:10px;
+    display:inline;
+    background-color:#ff91c8ef  ;
+}
+.b3{
+    height:25px;
+    width:25px;
+    border-radius:50%;
+    margin:10px;
+    display:inline;
+    background-color:#f1f501 ;
+}
+.b4{
+    height:25px;
+    width:25px;
+    border-radius:50%;
+    margin:10px;
+    display:inline;
+    background-color:#f83a49 ;
+}
+.b5{
+    height:25px;
+    width:25px;
+    border-radius:50%;
+    margin:10px;
+    display:inline;
+    background-color:#fc98f3 ;
+}
+.b6{
+    height:25px;
+    width:25px;
+    border-radius:50%;
+    margin:10px;
+    display:inline;
+    background-color:#632801 ;
 }

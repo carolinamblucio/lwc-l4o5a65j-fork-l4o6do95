@@ -1,6 +1,134 @@
 <template>
-	<h1> Meu primeiro LWC</h1>
-	<p>
-		{title}
-	</p>
+	<div class="slds-card">
+		<h1> Lojinha</h1>
+
+	</div>
+
+
+	<div class="slds-card">
+		<h2>Iluminador </h2><br/>
+
+		<template if:true={isiluminadorV}>
+			<img src="https://d3g37he68niee0.cloudfront.net/PR/sephora/149326_01.jpg" width="190px" onclick={handleClick}/>
+			<br/>
+		</template>
+		<template if:true={isiluminadorR}>
+			<img src="https://www.sephora.com.br/dw/image/v2/BFJC_PRD/on/demandware.static/-/Sites-masterCatalog_Sephora/pt_BR/dwb6acdeb1/images/hi-res-BR/fb_vday19_silo_killawatt_freestyle_highlighter_open_pink_2000x2000_300dpi_1000px.jpg?sw=1200&sh=1200&sm=fit" width="190px" onclick={handleClick}/>
+			<br/>
+		</template>
+		<template if:true={isiluminadorA}>
+			<img src="https://www.sephora.com.br/dw/image/v2/BFJC_PRD/on/demandware.static/-/Sites-masterCatalog_Sephora/pt_BR/dw03cab7ad/images/hi-res-BR/fb_killawatt_freestyle_highlighter_trophy_wife_01_1500px.jpg?sw=1200&sh=1200&sm=fit" width="190px" onclick={handleClick}/>
+			<br/>
+		</template>
+
+		<input type="button"  class="b1" onclick={iluminadorVermelho}></input>
+		<input type="button"  class="b2" onclick={iluminadorRosa}></input>
+		<input type="button"  class="b3" onclick={iluminadorAmarelo}></input> <br/>
+
+		<form>
+			<label>Selecione uma quantidade: </label>
+			<select>
+            <option> 1</option> 
+            <option> 2 </option>
+            <option> 3</option>
+						<option> 4</option>
+						<option> 5</option>
+						<option> 6</option>
+        </select>
+		</form>
+
+
+		<div class="preco"> R$ 100,00 </div>
+		<lightning-button variant="brand" label="Compre Aqui!"><a href="djfhsjfhdjs"></a></lightning-button><br/>
+		<br/>
+
+	</div>
+
+	<div class="slds-card">
+		<h2>Delineador </h2> <br/><br/>
+		<template if:true={delineadorP}>
+			<img src="https://a.cdnsbn.com/images/products/26234479102.jpg" width="190px" onclick={handleClick}/>
+			<br/>
+		</template>
+
+		<template if:true={delineadorC}>
+			<img src="https://images.tcdn.com.br/img/img_prod/697761/mini_vivid_liquid_eyeliner_fenty_beauty_1951_1_20191230152838.png" width="190px" onclick={handleClick}/>
+			<br/>
+		</template>
+
+		<template if:true={delineadorG}>
+			<img src="https://www.dhresource.com/0x0/f2/albu/g6/M00/1F/A1/rBVaSFpEm9mAY7yaAAFzERvC10E042.jpg" width="190px" onclick={handleClick}/>
+			<br/>
+		</template>
+
+
+
+		<lightning-button variant="brand-outline" label="Preto" onclick={delineadorPreto} class="slds-m-left_x-small">
+		</lightning-button>
+		<lightning-button variant="brand-outline" label="Colorido" onclick={delineadorColorido} class="slds-m-left_x-small">
+		</lightning-button>
+		<lightning-button variant="brand-outline" label="Glitter" onclick={delineadorGlitter} class="slds-m-left_x-small">
+		</lightning-button>
+		<br/><br/>
+
+
+		<form>
+			<label>Selecione uma quantidade: </label>
+			<select>
+            <option> 1</option> 
+            <option> 2 </option>
+            <option> 3</option>
+						<option> 4</option>
+						<option> 5</option>
+						<option> 6</option>
+        </select>
+		</form>
+
+
+		<div class="preco"> R$ 100,00 </div>
+		<lightning-button variant="brand" label="Compre Aqui!"><a href="djfhsjfhdjs"></a></lightning-button> <br/>
+		<br/>
+
+
+	</div>
+	<div class="slds-card">
+		<h2>Gloss </h2><br/><br/>
+
+		<template if:true={glossV}>
+			<img src="https://www.sephora.com.br/dw/image/v2/BFJC_PRD/on/demandware.static/-/Sites-masterCatalog_Sephora/pt_BR/dwbc1dc9db/images/Color%20BR/Fenty/gloss%20bomb%20heat/FB_JUNE2021_T2PRODUCT_SILO_GLOSS_BOMB_HEAT_OPEN_HOT_CHERRY_2000x2000_300DPI_1500px.jpg?sw=1200&sh=1200&sm=fit" width="190px" onclick={handleClick}/>
+			<br/>
+		</template>
+		<template if:true={glossR}>
+			<img src="https://www.sephora.com.br/dw/image/v2/BFJC_PRD/on/demandware.static/-/Sites-masterCatalog_Sephora/pt_BR/dw235777fc/images/Color%20BR/Fenty/gloss%20bomb%20heat/FB_HOL2021_I_T2PRODUCT_SILO_GLOSS_BOMB_HEAT_OPEN_HOT_FUSSY_2000x2000_1500px.jpg?sw=556&sh=680&sm=fit" width="190px" onclick={handleClick}/>
+			<br/>
+		</template>
+		<template if:true={glossM}>
+			<img src="https://www.sephora.com.br/dw/image/v2/BFJC_PRD/on/demandware.static/-/Sites-masterCatalog_Sephora/pt_BR/dwa39b2c2a/images/Color%20BR/Fenty/gloss%20bomb%20heat/FB_HOL2021_I_T2PRODUCT_SILO_GLOSS_BOMB_HEAT_OPEN_HOT_CHOCOLIT_2000x2000_1500px.jpg?sw=1200&sh=1200&sm=fit" width="190px" onclick={handleClick}/>
+			<br/>
+		</template>
+
+		<input type="button"  class="b4" onclick={glossVermelho}></input>
+		<input type="button"  class="b5" onclick={glossRosa}></input>
+		<input type="button"  class="b6" onclick={glossMarrom}></input><br/>
+
+		<form>
+			<label>Selecione uma quantidade: </label>
+			<select>
+            <option> 1</option> 
+            <option> 2 </option>
+            <option> 3</option>
+						<option> 4</option>
+						<option> 5</option>
+						<option> 6</option>
+        </select>
+		</form>
+
+
+
+
+		<div class="preco"> R$ 100,00 </div>
+		<lightning-button variant="brand" label="Compre Aqui!"><a href="djfhsjfhdjs"></a></lightning-button> <br/>
+		<br/>
+
+	</div>
 </template>
